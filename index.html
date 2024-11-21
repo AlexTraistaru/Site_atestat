@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title >Industria automobilistica romaneasca</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stiluri.css">
+
+<style>
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.left {
+  width: 25%;
+}
+
+/* Middle column */
+.column.right {
+  width: 70%;
+}
+
+/* Clear floats after the columns */
+.content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.left, .column.right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+
+<body bgcolor="#72D68A">
+<div id="progressbar"></div>
+    <div id="scrollPath"></div>
+<div class="header">
+<h1>Industria auto romaneasca<h1>
+</div>
+<div class="nav">
+  <ul>
+<li><a href="index.html">Acasa</a></li>
+  <li><a href="istoric.html">Istoric</a></li>
+  <li><a href="parc.html">Parc auto</a></li>
+  <li><a href="dacia.html">Dacia</a></li>
+  <li><a href="Aro.html">Aro</a></li>
+  <li><a href="galerie.html">Galerie</a></li>
+  </ul>
+</div>
+<center>
+<img src="poze/7.jpg" width="350" height="480" alt="Dacia 1310">
+<img src="poze/3.jpg" width="350" height="480" alt="Dacia 1310">
+<img src="poze/10.jpg" width="350" height="480" alt="Dacia 1310">
+<img src="poze/5.jpg" width="350" height="480" alt="Dacia 1310">
+</center>
+<div class="footer">
+Arhiva personala <br><br><br>
+Site realizat de:Trăistaru Alexandru Mihai <br> Clasa a XII-a B.
+<body onload="startTime()">
+<div id="txt"></div>
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};
+  return i;
+}
+</script>
+</body>
+
+</div>
+
+</div>
+<script src="java.js">
+</script>
+</body>
+
+</html>

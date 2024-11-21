@@ -1,0 +1,103 @@
+*{
+	box-sizing:border-box;
+}
+
+.header{
+	text-align:center;
+	color: coral;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav a {
+    color:#571609;
+    padding: 25px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 25px;
+    opacity: 80%
+}
+.nav a:hover{
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+.nav a:active {
+    color: #09c609;
+}
+
+.content{
+	padding:3%;
+	font-size:20px;
+	text-align:justify;
+	max-width:80%;
+	margin:auto;
+}
+
+.content img
+{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:30px;
+}
+
+
+.footer{
+	text-align:center;
+	color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+	font-weight:bold;
+	padding:10px;
+	font-size:20px;
+}
+
+h2 
+{
+color:blue;
+}
+h3 
+{
+	color:red;
+}
+::-webkit-scrollbar
+{
+    width: 0;
+}
+
+#scrollPath
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0.3vw;
+    height: 100%;
+    opacity:0;
+
+}
+
+#progressbar
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width:  1vw;
+    height: 100%;
+    background: #262626;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 10px;
+}
